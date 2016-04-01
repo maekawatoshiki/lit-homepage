@@ -8,9 +8,21 @@ div.main {
 	background-color: #080808;
 	margin: 0 auto;
 	width: 990px;
-	height: 300%;
-	display: block;
+	/* height: 300%; */
+	/* display: block; */
 	box-shadow: 0px -10px 25px 10px rgba(15, 15, 15, 0.4)
+}
+a.doc {
+	color: #fff;
+	text-decoration: none;
+	text-align: right;
+	display: inline-block;
+}
+footer {
+	margin-left: auto;
+	text-align: right;
+	display: block;
+	padding: 20px;
 }
 h1.logo {
 	font-family: 'Montserrat', sans-serif;

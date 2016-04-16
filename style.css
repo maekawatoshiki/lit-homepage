@@ -8,6 +8,7 @@ div.main {
 	background-color: #080808;
 	margin: 0 auto;
 	width: 990px;
+	margin-bottom: 0px;
 	/* height: 300%; */
 	/* display: block; */
 	box-shadow: 0px -10px 25px 10px rgba(15, 15, 15, 0.4)
@@ -56,9 +57,16 @@ h2 {
 	padding: 30px 0px;
 }
 h3 {
-	color: rgb(115, 117, 118);
+	color: #4f4f4f;
 	font-size: 20px;
 	padding: 10px 10px;
+}
+h3:hover {
+	color: #afbfaf;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 li {
 	font-size: 18px;

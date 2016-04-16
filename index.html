@@ -14,19 +14,43 @@
 		<hr>
 		<section>
 			<h2>Design Concept</h2>
-			<ul type="circle">
+			<style>
+			ul {
+				display: inline-block;
+				/* width: 41%; */
+			}
+			</style>
+			<ul type="circle" >
 				<li>Simple syntax like Ruby</li>
 				<li>Statically typed by type inference</li>
+				<li>Minimal runtime</li>
+				<li>Easy to wrap C libraries</li>
 				<li>Complie to native code</li>
 			</ul>
-		</section>
-		<hr>
-		<section>
-			<h2>Sample Code</h2>
-			<h3>#Greet</h3>
-			<img src="img/greet1.png">	
-			<h3>#FizzBuzz</h3>
-			<img src="img/fizzbuzz1.png">	
+
+			<style type="text/css">
+				#editor {
+					width: 400px;
+					height: 170px;
+					display: inline-block;
+					margin-left: 50px;
+				}
+			</style>
+			<div id="editor">def sum x y
+	all = 0
+	for i in x..y
+		all += i
+	end
+	all
+end
+
+puts "sum of 1 to 10 is " sum 1 10</div>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+		  <script>
+    var editor = ace.edit("editor");
+		editor.setTheme("ace/theme/monokai");
+		editor.getSession().setMode("ace/mode/ruby");
+		  </script>
 		</section>
 		<hr>
 		<footer>
@@ -39,5 +63,5 @@
 			</p>
 		</footer>
 	</div>
-</body>
+	</body>
 </html>

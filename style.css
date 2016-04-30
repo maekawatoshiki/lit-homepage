@@ -90,3 +90,15 @@ nav > li {
 	display: inline-block;
 	margin: 10px 30px;
 }
+
+.mainsection {
+  height: 20px;
+  width: 90%;
+  background-image: radial-gradient(
+    farthest-side at 50% -50%,
+    hsla(0, 0%, 100%, 0.5),
+    hsla(0, 0%, 100%, 0));
+	border-color:black;
+	border: none;
+}
+ 

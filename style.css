@@ -38,8 +38,6 @@ hr {
 li {
 	color: #fff;
 }
-ul {
-}
 p.logo {
 	color: rgb(102, 103, 101);
 	padding-left: 10px;
@@ -71,7 +69,6 @@ h3:hover {
 	transition: 0.3s ease-in-out;
 }
 li {
-	font-size: 18px;
 	margin-bottom: 15px;
 }
 body {

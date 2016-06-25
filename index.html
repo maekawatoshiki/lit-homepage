@@ -31,9 +31,10 @@
 		<style type="text/css">
 			#editor_area {
 				width: 400px;
-				height: 230px;
+				/* height: 230px; */
 				display: inline-block;
 				margin-left: 40px;
+				box-shadow: 0px 0px 1px 1px #fff;
 			}
 			#editor {
 				width: 400px;
@@ -41,9 +42,21 @@
 				display: inline-block;
 			}
 			#run_button {
+				-webkit-transition: 0.3s linear;
+				-moz-transition: 0.3s linear;
+				-o-transition: 0.3s linear;
+				transition: 0.3s linear;
 				width: 100%;
 				display: inline-block;
 				padding-right: 0px;
+				background-color: rgba(34, 42, 32, 0.8);
+				text-align: center;
+				color: white;
+			}
+			#run_button:hover {
+				border-radius: 1px;
+				color: black;
+				background-color: #DCDCDC;
 			}
 			#output {
 				display: none;
@@ -62,7 +75,6 @@
 			}
 			#output:hover	{
 				box-shadow: 0px 0px 20px 1px #00F5FF;
-				/* border: 1px solid #00F5FF; */
 				-webkit-transition: 0.3s linear;
 				-moz-transition: 0.3s linear;
 				-o-transition: 0.3s linear;
@@ -80,7 +92,7 @@
 end
 
 puts "sum of 1 to 10 is " sum 1 10</div>
-			<input id="run_button" type="button" value="Run" onclick="load_ajax_test()">
+			<div id="run_button" onclick="load_ajax_test()">Run</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
 		<script>
@@ -100,7 +112,7 @@ puts "sum of 1 to 10 is " sum 1 10</div>
 			xmlHttp.send(senddata);
 			var output = document.getElementById("output");
 			var res_output = xmlHttp.responseText;
-			output.innerHTML = "Output:<br>" + ((res_output.length > 650) ? (res_output.substr(0, 650) + "...") : res_output);
+			output.innerHTML = "<b>Output:</b><br>" + ((res_output.length > 650) ? (res_output.substr(0, 650) + "...") : res_output);
 			output.style.display = "block";
 			output.style.left = (window.innerWidth - 400) / 2;
 			output.style.height = window.innerHeight / 2;
@@ -115,8 +127,8 @@ puts "sum of 1 to 10 is " sum 1 10</div>
 			<h3>DOCUMENT</h3></a>
 		<a class="doc" href="https://github.com/maekawatoshiki/lit-x86">
 			<h3>REPOSITORY</h3></a>
-		<p align="center">
-		Copyright (C) 2016 maekawatoshiki
+		<p align="center" style='color:gray'>
+			Copyright (C) 2016 maekawatoshiki
 		</p>
 	</footer>
 </div>

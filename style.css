@@ -1,18 +1,35 @@
+header {
+	position: fixed;
+	width: 20%;;
+	height: 100%;
+	background-color: rgb(23, 29, 30);
+}
 div.logo {
-	margin-top: 0px;
-	margin-left: 100px;
+	margin-left: 10px;
 	margin-bottom: 31px;
 	padding: 3px 20px 10px;
-	float: left;
+	text-align: right;
+	/* float: right; */
+}
+h1.logo {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 70px;
+	margin-right: 20px;
+	color: #FFF;
+	font-size: 50px;
+}
+p.logo {
+	color: rgb(102, 103, 101);
+	padding-right: 10px;
 }
 div.main {
-	background-color: #080808;
+	background-color: #eee;
 	margin: 0 auto;
-	width: 990px;
-	margin-bottom: 0px;
+	margin-left: 20%;;
+	/* margin-bottom: 0px; */
 	/* height: 300%; */
 	/* display: block; */
-	box-shadow: 0px -10px 25px 10px rgba(15, 15, 15, 0.4)
+	/* box-shadow: 0px -10px 25px 10px rgba(15, 15, 15, 0.4) */
 }
 a.doc {
 	color: #fff;
@@ -26,32 +43,22 @@ footer {
 	display: block;
 	padding: 20px;
 }
-h1.logo {
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 70px;
-	color: #FFF;
-	font-size: 50px;
-}
 hr {
 	clear: left;
 	border-color: #d9d9d9;
 	width: 100%;
 }
 li {
-	color: #fff;
-}
-p.logo {
-	color: rgb(102, 103, 101);
-	padding-left: 10px;
-	margin-top: -20px;
+	color: #000;
 }
 section {
-	margin-top: 40px;
+	/* margin-top: 40px; */
 	margin-left: 100px;
-	padding-bottom: 50px;
+	/* padding-bottom: 50px; */
 }
 p {
-	color: #fff;
+	color: #000;
+	font-size: 20px;
 }
 h2 {
 	color: rgb(102, 103, 101);
@@ -70,32 +77,35 @@ h3:hover {
 	-o-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
-li {
-	margin-bottom: 15px;
-}
 body {
 	margin: 0px;
+	padding: 0;
+	line-height: 25px;
 }
- nav {
-	padding-top: 70px;
+nav {
+	padding-top: 30px;
 	text-align: right;
-	margin-right: 100px;
+	/* margin-right: 100px; */
 }
 
 nav > li {
 	list-style-type: none;
-	display: inline-block;
-	margin: 10px 30px;
+	/* display: inline-block; */
+	padding-right: 10px;
+	background-color: rgb(23, 27, 30);
+	margin-bottom: 2px;
+}
+nav > li:hover {
+	background-color: rgb(33, 37, 40);
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
-.mainsection {
-  height: 20px;
-  width: 90%;
-  background-image: radial-gradient(
-    farthest-side at 50% -50%,
-    hsla(0, 0%, 100%, 0.5),
-    hsla(0, 0%, 100%, 0));
-	border-color:black;
-	border: none;
+footer {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	color: rgb(102, 103, 101);
 }
- 

@@ -6,7 +6,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-	<div class="main">
+	<header>
 		<div class="logo">
 			<h1 class="logo">Lit</h1>
 			<p class="logo">The Programming Language</p>
@@ -15,13 +15,28 @@
 			<li><a class="doc" href="https://github.com/maekawatoshiki/lit-x86/wiki/Lit-reference"><h3>DOCUMENT</h3></a></li>
 			<li><a class="doc" href="https://github.com/maekawatoshiki/lit-x86"><h3>REPOSITORY</h3></a></li>
 		</nav>
-		<hr class="mainsection">
+		<footer>
+			Copyright (C) 2016 maekawatoshiki
+		</footer>
+	</header>
+	<div class="main">
+		<section>
+			<h2>What is Lit?</h2>
+			<p style="margin-right: 10%">
+			Lit is a programming language designed 'Fast', 'Lightweight' and 'Enjoy'.<br>
+			'Fast' means that program runs fast than the other LL. In order to achieve this,
+			Lit lang supports JIT with LLVM. You can feel 'Fast' from the efficient native code!<br>
+			'Lightweight', the word as, means that easy to write codes. Lit's syntax is similar to Ruby and C++.<br>
+			'Enjoy' is the most important. If you can't enjoy programming? No amazing software will appear. 
+			So Lit aims that programming language which we can enjoy programming.
+			</p>
+		</section>
 		<section>
 			<h2>Design Concept</h2>
 			<style>
 			ul {
-				display: inline-block;
 				font-size: 20px;
+				width: 70%;
 			}
 		</style>
 		<ul type="circle">
@@ -34,14 +49,16 @@
 
 		<style type="text/css">
 			#editor_area {
-				width: 400px;
+				margin-top: 30px;
+				width: 80%;
 				/* height: 230px; */
 				display: inline-block;
 				margin-left: 40px;
+				margin-right: 0px;
 				box-shadow: 0px 0px 1px 1px #fff;
 			}
 			#editor {
-				width: 400px;
+				width: 100%;
 				height: 170px;
 				display: inline-block;
 			}
@@ -95,14 +112,14 @@
 	all
 end
 
-puts "sum of 1 to 10 is " sum 1 10</div>
+puts("sum of 1 to 10 is ", sum(1, 10))</div>
 		<div id="run_button" onclick="load_ajax_test()">Run</div>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
 		<script>
 		editor = ace.edit("editor");
 		editor.setTheme("ace/theme/monokai");
 		editor.getSession().setMode("ace/mode/ruby");
-		editor.setFontSize(14);
+		editor.setFontSize(18);
 		// Ajax
 		function load_ajax_test() {
 			var xmlHttp = new XMLHttpRequest();
@@ -121,12 +138,13 @@ puts "sum of 1 to 10 is " sum 1 10</div>
 		}
 		</script>
 	</section>
-		<hr>
-		<footer>
-			<p align="center">
-				Copyright (C) 2016 maekawatoshiki
-			</p>
-		</footer>
+	<section>
+		<h2>Try it</h2>
+		<p>
+		Now, you can't try Lit on Web. But can try it easily on Docker.<br>
+		Go to REPOSITORY, and look at README.md
+		</p>
+	</section>
 	</div>
 	</body>
 </html>
